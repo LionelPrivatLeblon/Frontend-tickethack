@@ -12,6 +12,7 @@ body {
   background: url(images/train.png);
   background-repeat: no-repeat;
   background-position: center center;
+  overflow-x: hidden;
 }
 .no-result-trip-container {
   background: url(images/notfound.png);
@@ -166,6 +167,60 @@ h3 {
 
 #book {
   width: 2.5vw;
+  padding: 2px;
+  border: 2px #ffffff solid;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: rgb(125, 180, 125);
+  font-size: 12px;
+  margin: 5px;
+}
+.booking-trip-container {
+  width: 600px;
+  height: 300px;
+  margin: 30px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.total-booking {
+  width: 800px;
+  height: 20px;
+  margin: 0px;
+  padding: 15px;
+  background-color: rgb(49, 46, 81);
+  border-radius: 20px;
+}
+
+#booking-milieu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 50px);
+  align-items: center;
+}
+
+#total-booking {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  height: 50vh;
+  align-items: flex-end;
+}
+.booking-trip-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:flex-end ;
+}
+
+#acheter{
+  width: 3vw;
   padding: 2px;
   border: 2px #ffffff solid;
   border-radius: 5px;

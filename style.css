@@ -13,6 +13,11 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
+.no-result-trip-container {
+  background: url(images/notfound.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 #container {
   height: 100vh;
   width: 100vw;
@@ -64,6 +69,19 @@ body {
 }
 
 .result-trip-container {
+  width: 250px;
+  height: 300px;
+  margin: 30px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-result-trip-container {
   width: 250px;
   height: 300px;
   margin: 30px;

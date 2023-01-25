@@ -17,7 +17,12 @@ body {
   background: url(images/notfound.png);
   background-repeat: no-repeat;
   background-position: center center;
+<<<<<<< HEAD
 }
+=======
+}  
+
+>>>>>>> 24e4690d7a7e68769b065088d256178825b93a2e
 #container {
   height: 100vh;
   width: 100vw;
@@ -69,6 +74,20 @@ body {
 }
 
 .result-trip-container {
+  width: 250px;
+  height: 300px;
+  margin: 30px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+.no-result-trip-container {
   width: 250px;
   height: 300px;
   margin: 30px;
@@ -136,4 +155,26 @@ h3 {
 
 .train {
   width: 200px;
+}
+.one-trip-container {
+  width: 280px;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#book {
+  width: 2.5vw;
+  padding: 2px;
+  border: 2px #ffffff solid;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: rgb(125, 180, 125);
+  font-size: 12px;
+  margin: 5px;
 }

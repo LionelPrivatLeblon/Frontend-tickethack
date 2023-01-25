@@ -9,6 +9,12 @@ body {
   background-size: cover;
 }
 
+.result-trip-container {
+  background: url(images/train.png);
+  background-repeat: no-repeat;
+  background-position: center center; 
+}
+
 #container {
   height: 100vh;
   width: 100vw;

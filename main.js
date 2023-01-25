@@ -12,15 +12,19 @@ document.querySelector("#search").addEventListener("click", function () {
   })
     .then((response) => response.json())
     .then((data) => {
-      if (data.result) {
+      if (data.result) {document
+        .querySelector("#data-result")
+        .classList.add("result-trip-container");
+      document
+        .querySelector("#data-result")
+        .classList.remove("no-result-trip-container");
         document.querySelector("#data-result").innerHTML += `
 			<div>
-      <p>${data.trips.departure}</p>
-				<p>${data.trips.arrival}</p>
-				<p>${data.newDate}</p>
-        <p>${data.newHour}</p>
-				<p>${data.trips.price}</p>
-			</div>`;
+        <div class="one-trip-container">
+        <p>${data.trips.departure} / ${data.trips.arrival} le ${data.newDate} à ${data.newHour} ${data.trips.price}€<p>
+        <button id="book">book</button>
+        </div>
+        </div>`;
         console.log(data);
         document.querySelector("#departure").value = "";
         document.querySelector("#arrival").value = "";
@@ -28,7 +32,14 @@ document.querySelector("#search").addEventListener("click", function () {
         /*if (data.result) {
         window.location.assign("index.html");
       }*/
-      }
-    });
+    } else {
+      document
+        .querySelector("#data-result")
+        .classList.add("no-result-trip-container");
+      document
+        .querySelector("#data-result")
+        .classList.remove("result-trip-container");
+    }
+  });
 });
 

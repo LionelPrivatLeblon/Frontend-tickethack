@@ -13,13 +13,14 @@ document.querySelector("#search").addEventListener("click", function () {
     .then((response) => response.json())
     .then((data) => {
       if (data.result) {
-        document.querySelector("#data-result").innerHTML += `<div>
+        document.querySelector("#data-result").innerHTML += `
+			<div>
       <p>${data.trips.departure}</p>
-                <p>${data.trips.arrival}</p>
-                <p>${data.newDate}</p>
-                <p>${data.newHour}</p>
-                <p>${data.trips.price}</p>
-            </div>`;
+				<p>${data.trips.arrival}</p>
+				<p>${data.newDate}</p>
+        <p>${data.newHour}</p>
+				<p>${data.trips.price}</p>
+			</div>`;
         console.log(data);
         document.querySelector("#departure").value = "";
         document.querySelector("#arrival").value = "";

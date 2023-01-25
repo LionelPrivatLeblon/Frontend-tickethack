@@ -17,12 +17,8 @@ body {
   background: url(images/notfound.png);
   background-repeat: no-repeat;
   background-position: center center;
-<<<<<<< HEAD
 }
-=======
-}  
 
->>>>>>> 24e4690d7a7e68769b065088d256178825b93a2e
 #container {
   height: 100vh;
   width: 100vw;
